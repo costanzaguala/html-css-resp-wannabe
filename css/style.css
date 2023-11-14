@@ -132,7 +132,50 @@ img {
 
  @media screen and (max-width: 768px) {
     .container {
+        width: 100%;/* mobile: dai 480px in giù */
+
+@media screen and (max-width: 480px) {
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .lessons .col {
         width: 100%;
+    }
+
+    .steps .col {
+        width: 100%;
+    }
+
+    .why-us .col-left, .why-us .col-right {
+        width: 100%;
+    }
+
+    .col:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    .steps, .why-us {
+        margin-bottom: 0;
+    }
+
+    .why-us {
+        background-color: #222222;
+        padding: 3rem;
+    }
+
+}
+
+ /* bonus */
+
+ @media screen and (min-width: 768px) {
+    
+    .container {
+        width: 100%;
+    }
+
+}
     }
 
 }
@@ -172,3 +215,12 @@ img {
 
 }
 
+ /* bonus */
+
+ @media screen and (min-width: 768px) {
+    
+    .container {
+        width: 100%;
+    }
+
+}
